@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Bhargavkulla/python-docker-app.git'
+                git url:'https://github.com/Bhargavkulla/python-docker-app.git',branch:'main'
             }
         }
         stage('Build Docker Image') {
