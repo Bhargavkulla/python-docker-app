@@ -13,7 +13,8 @@ spec:
         app: python-app
     spec:
       containers:
-      - name: python-app
-        image: bhargavakulla/python-app:latest
-        ports:
-        - containerPort: 5000
+        - name: python-app
+          image: bhargavakulla/python-app:latest
+          ports:
+            - containerPort: 80
+
